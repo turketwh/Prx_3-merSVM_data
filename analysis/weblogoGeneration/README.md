@@ -1,6 +1,6 @@
 ## Weblogo generation
 
-This folder contains data, scripts, and code to extract and align sequence regions around 3-mers of interest. 
+This folder contains documentation and data for scripts and code to extract and align sequence regions around 3-mers of interest. 
 
 The results of this analysis relate to Figures 2, 3, 4, 5, and 6 and the corresponding discussions in the *Discussion* 
 section of the manuscript, as well as the figures and corresponding discussion in the supplementary file *Additional file 2*.
@@ -10,11 +10,11 @@ section of the manuscript, as well as the figures and corresponding discussion i
 The *clustalo* executable needs to be copied into the folder where these programs and scripts are located (see the auxiliary 
 programs section in the main README.md)
 
-### Compiling source code (if available)
-If you have access to the source code only, then the Java programs can be compiled using the following commands:
+### Needed Java programs
+The following Java programs are needed:
 ```
-javac ExtractSequencesWithMatch.java
-javac MapBackKmer.java
+ExtractSequencesWithMatch.class
+MapBackKmer.class
 ```
 
 ---
