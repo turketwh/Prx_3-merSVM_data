@@ -1,17 +1,16 @@
 ## Active site signature analysis 
 
-This folder contains scripts and code to re-format active site signatures provided in the supplementary information of Harper *et al*. 
-and data, scripts, and source code to search for 3-mers within those signatures.
+This folder contains documentation and input files for the scripts and code to re-format active site signatures provided in the supplementary information of Harper *et al*. and data, documentation, and input files for scripts and source code to search for 3-mers within those signatures.  The associated scripts and source code are available through the link provided in the main *README.md* file.
 
 The results of this analysis relates to the AS% column of Table 3 of the manuscript.
 
 ---
-### Compiling source code (if available)
-If you have access to the source code only, then the three Java programs can be compiled using the following commands:
+### Needed Java classes
+The following Java programs are needed
 ```
-javac AddRegionMarkers.java
-javac FilterOutReplicates.java
-javac ActiveSiteAnalysis.java
+AddRegionMarkers.class
+FilterOutReplicates.class
+ActiveSiteAnalysis.class
 ```
 
 ---
