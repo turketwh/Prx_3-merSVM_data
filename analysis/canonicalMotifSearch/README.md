@@ -1,18 +1,16 @@
 ## Canonical motif search
 
-This folder contains scripts and code to search subgroup-specific FASTA files for subgroup-specific motifs, 
-returning stats on motif hits.
+This folder contains input files and documentation for the scripts and code to search subgroup-specific FASTA files for subgroup-specific motifs, returning stats on motif hits.
 
 The results of this analysis relate to Table 5 of the manuscript.
 
 ---
-### Compiling source code (if available)
-If you have access to the source code only, then the four Java programs can be compiled using the following commands:
+### Needed Java classes
 ```
-javac DegnenerateMotif.java
-javac LabelViaDegenerateMotif.java
-javac ShowLabelGroups.java
-javac ComputeLabelGroupStatistics.java
+DegnenerateMotif.class
+LabelViaDegenerateMotif.class
+ShowLabelGroups.class
+ComputeLabelGroupStatistics.class
 ```
 
 ---
@@ -101,6 +99,3 @@ Two of the four matched only the AhpE motif (*Exact Hit*). One of the four match
 These analyses are performed for all six subgroups individually. 
 
 To search for different motifs, one can edit the *atlasMotifs.txt* file and then re-run the script.
-
-
-
