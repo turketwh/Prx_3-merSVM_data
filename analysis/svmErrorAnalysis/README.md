@@ -1,16 +1,16 @@
 ## SVM error analyis
 
-This folder contains scripts and code to determine and extract the protein sequences for which there was a difference
+This folder contains documentation for scripts and code to determine and extract the protein sequences for which there was a difference
 in annotation between the Harper approach and the Prx_3-merSVM classifier
 
 The results of this analysis relate to Tables 6 and 7 and the corresponding discussions in the manuscript.
 
 ---
-### Compiling source code (if available)
-If you have access to the source code only, then the Java programs can be compiled using the following commands:
+### Needed Java programs
+The following Java programs are needed:
 ```
-javac ExtractErrorInformation.java
-javac ExtractErrorSequences.java 
+ExtractErrorInformation.class
+ExtractErrorSequences.class 
 ```
 ---
 ### Executing programs
