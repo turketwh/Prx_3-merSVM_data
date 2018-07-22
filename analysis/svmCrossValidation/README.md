@@ -1,7 +1,6 @@
 ## SVM cross validation
 
-This folder contains scripts, code, and auxiliary data files to perform 10-fold cross validation on the data in the the 
-*harper_SFLD_95 data set*, including reformatting sequences to SVM format, training and testing 10-fold, and analyzing the accuracy of the models. 
+This folder contains documentation and auxiliary data files for scripts and code to perform 10-fold cross validation on the data in the the *harper_SFLD_95 data set*, including reformatting sequences to SVM format, training and testing 10-fold, and analyzing the accuracy of the models. 
 
 These relate to the discussion at the start of *the Results/Classifier perfomance* section of the manuscript (which ends
 up as a one sentence statement of the cross-validation performance).
@@ -12,20 +11,20 @@ The most general instructions are to make sure that the following auxiliary prog
 * svm_learn (from the SVM-Light distribution; see the auxiliary programs section in the main README.md)
 * svm_classify (from the SVM-Light distribution; see the auxiliary programs section in the main README.md)
 
-and then to copy over the following Java files from the *analysis/svmModeling* folder:
-* CombineScores.java
-* GenerateKmerMap.java
-* GenerateLabel.java
-* GenerateSVMFeatures.java
-* JoinActualPredicted.java
-* KmerCount.java
-* KmerMap.java
-* LabelTrainSVM.java
-* LabelWithNoLabel.java
-* Sequence.java
-* SequenceReader.java
-
-and then to compile all of the Java files: *javac \*.java*
+The following Java programs are needed:
+* CombineScores.class
+* GenerateKmerMap.class
+* GenerateLabel.class
+* GenerateSVMFeatures.class
+* JoinActualPredicted.class
+* KmerCount.class
+* KmerMap.class
+* LabelTrainSVM.class
+* LabelWithNoLabel.class
+* Sequence.class
+* SequenceReader.class
+* GenerateIndexedFasta.class
+* GenerateRandomGroups.class
 
 If you want to exactly replicate the work in the manuscript (using the same data in each fold as used in the manuscript),
 * Copy into this folder all of the files from the folder *data/svmCrossValidationInputs*.  There should be 10 for each subgroup (e.g. AhpE.0, AhpE.1, ..., AhpE.9, Prx1.0, Prx1.1, ..., Tpx.8, Tpx.9)
@@ -44,26 +43,23 @@ More detailed instructions are below.
 * svm_learn (from the SVM-Light distribution; see the auxiliary programs section in the main README.md)
 * svm_classify (from the SVM-Light distribution; see the auxiliary programs section in the main README.md)
 
-### Compiling source code (if available)
-If you have access to the source code only, then the Java programs can be compiled using the following commands:
+### Needed Java programs
+The following Java programs are needed:
 ```
-javac CombineScores.java
-javac GenerateKmerMap.java
-javac GenerateLabel.java
-javac GenerateSVMFeatures.java
-javac JoinActualPredicted.java
-javac KmerCount.java
-javac KmerMap.java
-javac LabelTrainSVM.java
-javac LabelWithNoLabel.java
-javac Sequence.java
-javac SequenceReader.java
-javac GenerateIndexedFasta.java
-javac GenerateRandomGroups.java
+CombineScores.class
+GenerateKmerMap.class
+GenerateLabel.class
+GenerateSVMFeatures.class
+JoinActualPredicted.class
+KmerCount.class
+KmerMap.class
+LabelTrainSVM.class
+LabelWithNoLabel.class
+Sequence.class
+SequenceReader.class
+GenerateIndexedFasta.class
+GenerateRandomGroups.class
 ```
-
-(alternatively, execute *javac \*.java*)
-
 ---
 ### Executing programs
 The script to run is:
