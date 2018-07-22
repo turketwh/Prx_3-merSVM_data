@@ -6,7 +6,7 @@ The results of this analysis relates to the AS% column of Table 3 of the manuscr
 
 ---
 ### Needed Java classes
-The following Java programs are needed
+The following Java programs are needed:
 ```
 AddRegionMarkers.class
 FilterOutReplicates.class
