@@ -1,18 +1,17 @@
 ## Permutation testing
 
-This folder contains scripts and code to determine a significance for a given 3-mer's weight for a given subgroup,
-based on repeatedly shuffling labels on the training data for the subgroup, re-training, and, after repeating the 
+This folder contains documentation and input files for the scripts and code to determine a significance for a given 3-mer's weight for a given subgroup, based on repeatedly shuffling labels on the training data for the subgroup, re-training, and, after repeating the 
 shuffling and retraining many times, counting how often weights >= the original weight are seen
 
 The results of this analysis relate to Table 3 and the corresponding discussion in the manuscript.
 
 ---
-### Compiling source code (if available)
-If you have access to the source code only, then the Java programs can be compiled using the following commands:
+### Needed Java programs
+The following Java programs are needed:
 ```
-javac PermuteLabels.java
-javac WeightAnalysis.java
-javac AssociateWithKmerString.java
+PermuteLabels.class
+WeightAnalysis.class
+AssociateWithKmerString.class
 ```
 
 ---
