@@ -1,11 +1,13 @@
 ## Canonical motif search
 
-This folder contains input files and documentation for the scripts and code to search subgroup-specific FASTA files for subgroup-specific motifs, returning stats on motif hits.
+This folder contains documentation and input files for the scripts and code to search subgroup-specific FASTA files for subgroup-specific motifs, returning stats on motif hits.
 
 The results of this analysis relate to Table 5 of the manuscript.
 
 ---
 ### Needed Java classes
+
+The following Java programs are needed:
 ```
 DegnenerateMotif.class
 LabelViaDegenerateMotif.class
