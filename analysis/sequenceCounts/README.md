@@ -1,18 +1,16 @@
 ## Sequence counts
 
-This folder contains data, scripts, and code to search subgroup-specific FASTA files for 3-mers and sets of 3-mers, 
-returning counts on how many 3-mer hits there are within the FASTA files.  
-
+This folder contains documentation, input files, and data for scripts and code to search subgroup-specific FASTA files for 3-mers and sets of 3-mers, returning counts on how many 3-mer hits there are within the FASTA files.  
 
 The results of this analysis relate to Tables 9, 10, and 11; the corresponding discussion in the manuscript; and the tables
 and discussion in supplementary information *Additional file 2*.
 
 ---
-### Compiling source code (if available)
-If you have access to the source code only, then the Java programs can be compiled using the following commands:
+### Needed Java programs
+The following Java programs are needed:
 ```
-javac FindSequenceMatches.java
-javac FindMatchesAgainstAll.java
+FindSequenceMatches.class
+FindMatchesAgainstAll.class
 ```
 
 ---
