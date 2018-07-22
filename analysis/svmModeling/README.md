@@ -1,7 +1,6 @@
 ## SVM modeling
 
-This folder contains data, scripts, and code to build SVM models for each Prx subgroup, use those models to classify the
-*harper* data set protein sequences, and then analyse 63 cases where the classifiers all returned negative scores.
+This folder contains documentation and data for scripts and code that build SVM models for each Prx subgroup, use those models to classify the *harper* data set protein sequences, and then analyse 63 cases where the classifiers all returned negative scores.
 
 The results of this analysis directly relate to Tables 2, 3, 7, and 8; Figure 1; the corresponding discussions for those tables and figures; supplementary information *Additional file 1*; and much of the other downstream analyses.
 
@@ -34,27 +33,24 @@ A more detailed description is below.
 * svm_classify (from the SVM-Light distribution; see the auxiliary programs section in the main README.md)
 * svm2weight.py (see the auxiliary programs section in the main README.md)
 
-
-### Compiling source code (if available)
-If you have access to the source code only, then the Java programs can be compiled using the following commands:
+### Needed Java programs
+The following Java programs are needed:
 ```
-javac Sequence.java
-javac SequenceReader.java
-javac KmerMap.java
-javac KmerCount.java
-javac GenerateKmerMap.java
-javac AnalyzeErrors.java
-javac CombineScores.java
-javac FindNoMatchScores.java
-javac GenerateLabel.java
-javac GenerateSVMFeatures.java
-javac JoinActualPredicted.java
-javac LabelTrainSVM.java
-javac LabelWithNoLabel.java
-javac MapBackWeights.java
+Sequence.class
+SequenceReader.class
+KmerMap.class
+KmerCount.class
+GenerateKmerMap.class
+AnalyzeErrors.class
+CombineScores.class
+FindNoMatchScores.class
+GenerateLabel.class
+GenerateSVMFeatures.class
+JoinActualPredicted.class
+LabelTrainSVM.class
+LabelWithNoLabel.class
+MapBackWeights.class
 ```
-
-(alternatively, execute *javac \*.java*)
 
 ---
 ### Executing programs
