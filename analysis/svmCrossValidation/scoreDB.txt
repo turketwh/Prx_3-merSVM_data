@@ -1,0 +1,6 @@
+AhpE scores.AhpE
+Prx1 scores.Prx1
+Prx5 scores.Prx5
+Prx6 scores.Prx6
+PrxQ scores.PrxQ
+Tpx scores.Tpx
