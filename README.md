@@ -5,11 +5,7 @@ These files are associated with the manuscript:
 K-mer based classifiers extract functionally relevant features to support accurate Peroxiredoxin subgroup distinction
 by Jiajie Xiao and William Turkett, Jr.
 
-The manuscript was submitted to BMC Bioinformatics on DATE.
-
-A preprint is available on BioArxiv at: 
-
-The appropriate point of contact is William Turkett.  Email is turketwh at my insitution's domain, wfu.edu.
+The appropriate point of contact for this work is William Turkett.  Email is turketwh at my insitution's domain, wfu.edu.
 ***
 A cloud-based (Amazon Web Services) implementation of the classifier is available [here](http://prxsubfamilyclassif-env.us-east-1.elasticbeanstalk.com/).
 ***
@@ -36,7 +32,7 @@ as well as documentation for the code:
 * analysis/svmCrossValidation - Perform 10-fold cross validation on the data in the the harper_SFLD_95 data set, including reformatting sequences to SVM format, training and testing 10-fold, and analyzing the accuracy of the models.  Used in conjunction with the cross validation analysis and relate to the discussion at the start of the *Results/Classifier perfomance* section of the manuscript.  
 
 ***
-The actual software is available from this link.  The software is shared through that mechanism instead of through Github due to University requirements relating to software intellectual property and export control. 
+The software (source and executable code) will be shared through a University mechanism per University requirements relating to software intellectual property and export control. A link to the software will be added when that mechanism has been set up.
 
 The software structure assumes execution on a Unix-style operating system.  The main program components are written in Java, so they should be executable anywhere, but the additional scripts, as well as references to directories, make use of Unix syntax.  
 ***
